@@ -6,7 +6,7 @@ body{
     
         display: inline-block;
         margin-left: 10px;
-        background-image: url(images/backgrround.jpg);
+        background-image: url("images/backgrround.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
