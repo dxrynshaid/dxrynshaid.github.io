@@ -6,7 +6,7 @@ body{
     
         display: inline-block;
         margin-left: 10px;
-        background-image: url("pro-html/images/backgrround.jpg");
+        background-image: url("images/backgrround.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -18,7 +18,7 @@ body{
     
     display: inline-block;
     margin-right: 300px; 
-    background-image: url("pro-html/images/background.jpg");
+    background-image: url("images/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
