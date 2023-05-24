@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Поиск товара</title>
+    <link rel="stylesheet" type="text/css" href="css/зщщд.css" />
+    <script>
+        function searchProduct() {
+            var searchTerm = document.getElementById('searchTerm').value;
+            
+            
+            var products = document.getElementsByClassName('product');
+            for (var i = 0; i < products.length; i++) {
+                var product = products[i];
+                var productName = product.textContent || product.innerText;
+                if (productName.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            }
+        }
+        
+        function goToProductPage(productName) {
+        
+            var url = '';
+            if (productName === 'Вещи') {
+                url = "C:/Users/shaid/Documents/WEB-SPORT INVENT/wears.html"; 
+            } else if (productName === 'Мячи') {
+                url = "C:/Users/shaid/Documents/WEB-SPORT INVENT/balls.html"; 
+            } else if (productName === 'Шейкеры') {
+                url = "C:/Users/shaid/Desktop/pro-html/shakers.html"; 
+            } else if (productName === 'Гантели') {
+                url = "C:/Users/shaid/Documents/WEB-SPORT INVENT/dumbells.html"; 
+            } 
+            
+            if (url) {
+                window.location.href = url;
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="topnav">
+        <a style="margin-left:90px;"><img src="C:\Users\shaid\Desktop\pro-html\images\logo.png" 
+            width="80" 
+            height="80"></a>
+        <a class="active" href="index.html">Главная</a>
+        <a style="margin-top:25px;" href="#news">Каталог</a>
+        <a style="margin-top:25px;"  href="#contact">О нас</a>
+        <a style="margin-top:25px;"  href="#about">Как заказать</a>
+        <a style="margin-top:25px;"  href="#about">Мы на карте</a>
+        <a class="butt"><button>Связаться с нами</button></a>
+      </div>
+      
+    <div class="container">
+    <div class="s1">
+    <a href="C:/Users/shaid/Documents/WEB-SPORT INVENT/shakers.html">
+      <img src="C:\Users\shaid\Desktop\pro-html\images\about.png" alt="Shaker" height="199px" width="183px"/>
+    </a>
+    </div>
+    <div class="h1">
+    <a href="C:/Users/shaid/Documents/WEB-SPORT INVENT/wears.html">
+        <img src="C:\Users\shaid\Desktop\pro-html\images\pro3.png" alt="Cloth" height="158px" width="183px" />
+      </a>
+    </div>
+    <div class="b1">
+      <a href="C:/Users/shaid/Documents/WEB-SPORT INVENT/balls.html">
+        <img src="C:\Users\shaid\Desktop\pro-html\images\pro1.png" alt="Ball" height="154px" width="156px"/>
+      </a>
+    </div>
+    <div class="w">
+      <a href="C:/Users/shaid/Documents/WEB-SPORT INVENT/dumbells.html">
+        <img src="C:\Users\shaid\Desktop\pro-html\images\pro4.png" alt="Wight" height="204px" width="203px"/>
+      </a>
+    </div>
+    </div>
+    <a>Поиск товара</a>
+    <input type="text" id="searchTerm" oninput="searchProduct()" placeholder="Введите название товара">
+    <ul>
+        <li class="product" onclick="goToProductPage('Вещи')">Вещи</li>
+        <li class="product" onclick="goToProductPage('Мячи')">Мячи</li> 
+        <li class="product" onclick="goToProductPage('Шейкеры')">Шейкеры</li>
+        <li class="product" onclick="goToProductPage('Гантели')">Гантели</li> 
+    </ul>
+</body>
+</html>
