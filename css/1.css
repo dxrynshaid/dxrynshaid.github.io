@@ -1,12 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: #686868;
+    color:#f2f2f2;
    }
 body{
     
         display: inline-block;
         margin-left: 10px;
-        background-image: url("https://github.com/dxrynshaid/dxrynshaid.github.io/blob/cb5f13ec294fcabd321d111eaedde3bcecd3ba9a/images/backgrround.jpg");
+        background-color: #686868;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -18,20 +20,22 @@ body{
     
     display: inline-block;
     margin-right: 300px; 
-    background-image: url("https://github.com/dxrynshaid/dxrynshaid.github.io/blob/cb5f13ec294fcabd321d111eaedde3bcecd3ba9a/images/background.jpg");
+    background-color: #686868;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .product:last-child {
     margin-right: 0;
+    background-color: #686868;
     
 }
 .product a{
   margin-right: 50px;
+  background-color: #686868;
 }
 .topnav {
-    background-color:#ff6613;
+  background-color: #686868;
     overflow: hidden; 
   }
   
@@ -43,10 +47,12 @@ body{
     text-decoration: none;
     font-size: 20px;
     font-family: 'Ubuntu';
+    background-color: #686868;
   }
   
   .topnav a:hover {
     color: black;
+    background-color: #686868;
   }
   
 
@@ -55,6 +61,7 @@ body{
     margin-left:300px;
     color: rgb(0, 0, 0);
     border-bottom: 3px solid rgb(0, 0, 0);
+    background-color: #686868;
   }
   .topnav button{
     background-color: #FF0000;
@@ -70,10 +77,16 @@ body{
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
   }
   .topbar {
-    background-color:#d96222;
+    background-color: #686868;
     height: 40px;
     font-size: 14px;
     transition: all 0.5s;
     color: #fff;
-    padding: 0;
+    padding: 100px;
+  }
+  .basket{
+    text-align:left;
+    background-color: #686868;
+    padding:300px;
+    padding-left: 5px;
   }
