@@ -1,5 +1,5 @@
 body{
-    background-image: url("https://github.com/dxrynshaid/dxrynshaid.github.io/blob/4b1642754d7fa8a5d28504259a14706f963ae848/images/backgound.jpg");
+    background-color: #686868;
     background-repeat:no-repeat; 
      background-size:cover; 
     font-size:50px;
@@ -15,7 +15,7 @@ body{
     
 }
 .topnav {
-    background-color:#ff6613;
+  background-color: #686868;
     overflow: hidden;
   }
   
