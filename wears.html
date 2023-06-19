@@ -5,57 +5,42 @@
         <link rel="stylesheet" type="text/css" href="css/1.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        <title>Вещи</title>
+        <title>Одежда</title>
     </head>
     <body>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-              <li class="breadcrumb-item"><a href="#">Каталог</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Вещи</li>
-            </ol>
-          </nav>
-        <section id="topbar" class="topbar d-flex align-items-center">
-            <div class="container d-flex justify-content-center justify-content-md-between">
-              <div class="contact-info d-flex align-items-center">
-                <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">221553@astanait.edu.kz</a></i>
-                <i class="bi bi-phone d-flex align-items-center ms-4"><span>+7026040235</span></i>
-              </div>
-              
-            </div>
-          </section>
+
         <main>  
             <div class="topnav">        
-                <a style="margin-left:200px;"><img src="images\1053916.png" 
+                <a style="margin-left:90px;"><img src="images\logo.png";
                     width="80" 
                     height="80"></a>
                 <a class="active" href="index.html">Главная</a>
-                <a style="margin-top:25px;" href="#news">Каталог</a>
-                <a style="margin-top:25px;"  href="#contact">О нас</a>
-                <a style="margin-top:25px;"  href="#about">Как заказать</a>
-                <a style="margin-top:25px;"  href="#about">Мы на карте</a>
-                <a class="butt" href="map.html"><button>Связаться с нами</button></a>
+                <a style="margin-top:25px;" href="PolePoiska.html">Каталог</a>
+                <a style="margin-top:25px;"  href="index.html">О нас</a>
+                <a style="margin-top:25px;"  href="index.html">Как заказать</a>
+                <a style="margin-top:25px;"  href="index.html">Мы на карте</a>
+                <a class="butt" href="index.html"><button>Связаться с нами</button></a>
               </div>
               
         <div class ='product' >
-            <img src="w1.png"
+            <img src="images\pro3.png"
             height="300px"
             width="300px"
             />
             <h1>Рашгард</h1>
-            <p>Тренировочная компрессионная футболка из тонкого текстиля, которая хорошо растягивается и плотно облегает фигуру.</p>
-            <p>Цена:25 990 тг</p>
-            <button onclick="addToBasket('Рашгард', 25990)">В корзину</button>
+            <p>Профессиональный Рашгард, +10 к силе</p>
+            <p>Цена:8 000 тг</p>
+            <button onclick="addToBasket('Шейкер', 8000)">В корзину</button>
         </div>
         <div class = 'product' >
-            <img src="w2.png"
+            <img src="images\pngegg (14).png"
             height="300px"
             width="300px"
             />
-            <h1>Костюм для сгонки веса </h1>
-            <p>Изготовлен из очень толстого нейлона с водоотталкивающим вкладышем из ПВХ-резины</p>
-            <p>Цена:32 999 тг</p>
-            <button onclick="addToBasket('костюм', 32990)">В корзину</button>
+            <h1>Спортивный лонгслив</h1>
+            <p>Спортивный лонгслив для Женщин</p>
+            <p>Цена:8 990 тг</p>
+            <button onclick="addToBasket('Шейкер', 8990)">В корзину</button>
         </div>
         
         </main>
@@ -64,7 +49,7 @@
             <ul id="basket-items"> 
             </ul> 
             <p>Итого: <span id="total-price">0</span> тг</p> 
-            <button>Оформить заказ</button> 
+            <button class="btn play">Оформить заказ</button> 
         </div> 
         <script> 
             let basketItems = []; 
@@ -87,6 +72,21 @@
             }); 
             totalElem.textContent = total; 
         } 
+        let playBtn = document.getElementsByClassName("play");
+
+            let text = document.querySelector("p");
+
+            const audio = new Audio("sound-effects-library-cash-register-sound.mp3");
+
+            playBtn[0].addEventListener("click", (e) => {
+            audio.play();
+            text.innerHTML = "Audio Playing";
+            });
+
+            pauseBtn[0].addEventListener("click", (e) => {
+            audio.pause();
+            text.innerHTML = "Audio Paused";
+            });
     </script> 
     </body>
 </html>
